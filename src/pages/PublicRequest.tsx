@@ -1,5 +1,5 @@
 import { useState, useRef, FormEvent } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useRecords } from '@/context/RecordContext'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -287,7 +287,7 @@ export default function PublicRequest() {
         </form>
 
         <div className="text-center text-xs text-muted-foreground space-y-1">
-          <p>Already have an account? <a href="/PatientRecord/login" className="text-primary font-medium hover:underline">Sign in here</a></p>
+          <p>Already have an account? <Link to="/login" className="text-primary font-medium hover:underline">Sign in here</Link></p>
         </div>
       </div>
     </div>

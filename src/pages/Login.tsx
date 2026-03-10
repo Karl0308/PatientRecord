@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '@/context/AuthContext'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -87,7 +87,7 @@ export default function Login() {
         {/* Public request link */}
         <div className="text-center">
           <p className="text-sm text-muted-foreground">
-            Need your records? <a href="/PatientRecord/request" className="text-primary font-semibold hover:underline">Request here</a> — no account needed.
+            Need your records? <Link to="/request" className="text-primary font-semibold hover:underline">Request here</Link> — no account needed.
           </p>
         </div>
 
